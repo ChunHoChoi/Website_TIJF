@@ -1,0 +1,441 @@
+/* formatting for home page */
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #dcbfa7;
+}
+
+#map {
+    width: 90%;
+    height: 360px;
+    padding-top: 55px;
+    padding-left: 100px;
+    margin-left: 30px;
+    margin-top: 40px;
+    border-radius: 15px;
+}
+
+#Location {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-evenly;
+    font-family: 'Shadows Into Light';
+    height: 60%;
+    margin-left: 40px;
+    margin-right:40px;
+    border-radius: 20px;
+    background-color:#D3A07E;
+}
+
+#Location h1 {
+    color: black;
+}
+
+#address {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: auto;
+}
+
+#address h1{
+    font-size:35px;
+    margin: auto;
+    margin-bottom:0px;
+    text-decoration: underline;
+}
+
+#address ul {
+    font-size: 25px;
+    text-align: right;
+    align-items: right;
+    display: flex; /* Use flexbox for horizontal alignment */
+    flex-direction: column;
+    margin-left:0px;
+    margin: 0;
+    width: 70%;
+}
+
+#address li {
+    text-decoration: none; 
+    list-style:none;
+    margin:0px;
+    width: 99%;
+}
+
+#address figure {
+    cursor: pointer;
+    text-align: center;
+    margin: 0;
+}
+
+#address img {
+    max-width: 35%;
+    height: auto;
+    border-radius: 50px 50px;
+}
+
+#address figcaption {
+    font-size: 15px;
+    margin-top: 5px;
+}
+
+#topsection {
+    background-image: url('https://npr.brightspotcdn.com/26/99/6b575a444e168d4cfcf9ec5f6384/chris-bair.jpg');
+    background-size: cover;
+    background-position: center;
+    /* background-repeat: no-repeat; */
+    min-height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+#topsection h1{
+    text-align: center;
+    font-family: 'Boogaloo'; 
+    font-size: 80px;
+}
+
+#topsection p{
+    font-size: 25px;
+    text-align: left;
+    font-family: 'Boogaloo';
+    background-color: black;
+    padding: 10px;
+
+}
+
+.topnav {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    overflow: hidden;
+    font-size: 20px; 
+    padding-left: 4%;
+    padding-right: 4%;
+    width:100%;
+    font-family: 'Boogaloo';
+}
+
+.topnav img{
+    max-width: 7%; /* Ensure the logo doesn't exceed its container width */
+    height: auto;
+}
+
+.topnav ul {
+    padding:0;
+    margin:10px; 
+    font-size:22px;
+}
+
+.topnav a {
+    color: white;
+    padding: 10px;
+    /* takes the underline out of the links */
+    text-decoration: none; 
+    display: inline-block;
+}
+
+.topnav li {
+    display: inline-block;
+    color: white; 
+    cursor: pointer;
+}
+
+#footer {
+    margin-top: auto; /* Pushes the footer to the bottom */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+    overflow: hidden;
+    font-size: 15px; 
+    padding-left: 4%;
+    padding-right: 4%;
+}
+
+.footericon {
+    font-size: 25px;
+}
+
+.footericon ul {
+    list-style: none;
+}
+
+.footericon a {
+    color: black;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footericon li {
+    display: inline-block;
+    color: black; 
+    cursor: pointer;
+}
+
+/* ticket section styling for main page */
+
+h2 {
+    text-align: center;
+    font-family: 'Shadows Into Light';
+}
+.ticketcontainer {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.ticketcard {
+    width: 300px;
+    margin: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px black;
+    background-color: aqua;
+}
+
+.buy-button {
+    display: block;
+    margin-top: 10px;
+    padding: 8px 15px;
+    background-color: rgb(0, 145, 255);
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.buy-button:hover {
+    background-color: blue;
+}
+
+/* formatting for artist content on main page */
+
+#scheduleh1{
+    font-family: 'Shadows Into Light';
+    padding-left: 10px;
+    padding-right: 10px; 
+    font-weight: bold;
+    color: black;
+}
+
+#Schedule {
+    display: flex; 
+    flex-direction: row;
+}
+
+.Artist { 
+    margin:auto;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-top: 1.75%;
+    padding-bottom: 2%;
+    border-radius: 15% 5px;
+    background-color: #192734;
+    width: 23.75%;
+    position: relative;
+}
+
+#leftbutton { 
+    position:absolute;
+    left: 2.5%; 
+    bottom: 62.5%;
+    height:40px;
+    width: 40px;
+    border-radius: 100%;
+    padding: 0%;
+    margin: 0%;
+    font-size: 64px;
+    color: gray;
+    border: none;
+    appearance: none;
+    background-color: rgba(0,0,0,0);
+    cursor: pointer;
+}
+
+#rightbutton {
+    position:absolute;
+    right: 7%;
+    bottom: 62.5%;
+    height:40px;  
+    width: 40px;  
+    border-radius: 100%;
+    padding: 0%;
+    margin: 0%;
+    font-size: 64px;
+    color: gray;
+    border: none;
+    appearance: none;
+    background-color: rgba(0,0,0,0);
+    cursor: pointer;
+}
+
+h1 { 
+    text-align: center;
+    margin: auto;
+}
+
+.Artist h1 { 
+   font-weight: bold; 
+   font-style: italic;
+   text-decoration: underline;
+   font-family: 'Orbitron', sans-serif;
+   color: darkgray;
+}
+
+.Artist p { 
+    text-align: justify;
+    font-family: 'Heebo', sans-serif;
+    font-weight: bold;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+#Artistimg {
+    border-radius: 50px 5px;
+    margin: auto;
+    height: 100%;
+    width: 100%;
+}
+
+.artistblurb{
+    background-color: #7f7f7f;
+    border-radius: 50px 5px;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-top: 0.25%;
+    padding-bottom: 0.25%;
+}
+
+#Artistdescription { 
+    font-size: 15px;
+}
+
+#artisttitle { 
+    font-family: 'Shadows Into Light';
+}
+
+/* formatting for artist page */
+
+#Artistlist {
+    display: flex;
+    flex-direction: column;
+}
+
+#Artistlist img {
+    border-radius: 50px 50px;
+    height: 350px;
+    width: 350px;
+    
+}
+
+#Artistlist h1 {
+   font-weight: bold; 
+   font-style: italic;
+   text-decoration: underline;
+   font-family: 'Orbitron', sans-serif;  
+}
+
+#Artistlist p {
+    font-family: 'Heebo', sans-serif;
+    font-weight: bold;
+    justify-content: center;
+    text-align: center;
+    color: black;
+}
+
+.Artistwrapper {
+    display: flex;
+    flex-direction: row;
+    padding: 2%;
+    margin: 1%;
+    gap: 0.5%;
+    border-radius: 50px;
+    background-color: #D3A07E;
+    align-items: center;
+    justify-content: center;
+}
+
+.ArtistButton {
+    width: 250px;
+    height: 35px;
+    border-radius: 50px;
+    background-color: #E0DAA4;
+    font-family: 'Orbitron', sans-serif;  
+    position: relative;
+    left: 42%;
+    color: black;
+}
+
+.ArtistButton:hover {
+    background-color: #C68458;
+}
+
+/* formatting for ticket page */
+#purchaseForm {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+select, input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+#orderSummary {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+}
+
+#orderSummary h2 {
+    font-size: 1.2em;
+    margin-bottom: 16px;
+}
+
+#orderSummary p {
+    margin-bottom: 8px;
+}
+
+@media (max-width: 600px) {
+    #purchaseForm, #orderSummary {
+        max-width: 100%;
+    }
+}

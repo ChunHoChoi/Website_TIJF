@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TJF Home</title>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Shadows Into Light' rel='stylesheet'>
+    <link rel="stylesheet" href="Assets/styles.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" integrity= "sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="crossorigin="" /> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100&display=swap" rel="stylesheet"> 
+    <link href='https://fonts.googleapis.com/css?family=Boogaloo' rel='stylesheet'>
+</head>
+<body>
+    <main id = "topsection">
+        <div class="topnav">
+            <img src="https://torontojazz.com/wpress2022/wp-content/uploads/TorontoJazzFest_Logo_SMALL_Feb22_2023.svg" alt="Logo">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="artists.html">Artists & Schedule</a></li>
+                <li><a href="buytickets.html">Purchase Tickets</a></li>
+                <li><a href="index.html#location">Location</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <h1>Toronto's International Jazz Festival</h1>
+        <p>June 21-30, 2023</p>
+        </div>
+    </main>
+
+    <!-- Tarun you can work from here -->
+    <div id="Tickets" style="margin-top:10px;">
+      
+        <h2>Tickets and Pricing</h2>
+
+        <div class="ticketcontainer">
+            <div class="ticketcard">
+                <h2>One Day Pass</h2>
+                <p>Access to any performance for one day</p>
+                <p>5% off all snacks and drinks</p>
+                <p>Price: $80.00</p>
+                <br>
+                <a href="buytickets.html" class="buy-button">Buy Now</a>
+            </div>
+            
+            <div class="ticketcard">
+                <h2>All Access Pass</h2>
+                <p>Unlimited access to every performance</p>
+                <p>20% off all snacks and drinks</p>
+                <p>Exclusive backstage meet & greets</p>
+                <p>Price: $200.00</p>
+                <a href="buytickets.html" class="buy-button">Buy Now</a>
+            </div>
+
+        </div>
+
+    <h1 id="location" style="font-family: 'Shadows Into Light'; font-size:35px; cursor: pointer;">Location:</h1>
+    <div id="Location">
+        <div id="map"></div> 
+        <div id="address">
+            <h1>Outdoor Stages</h1>
+            <ul>
+                <li>
+                    <figure>
+                        <img src="https://torontojazz.com/wpress2022/wp-content/uploads/The-Avenue_without-name-512x549.png" id="avenue">
+                        <figcaption style="font-size:20px">THE AVENUE</figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img src="https://torontojazz.com/wpress2022/wp-content/uploads/The-Vilage_Without-name-512x512.png" id="village">
+                        <figcaption style="font-size:20px">THE VILLAGE</figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img src="https://torontojazz.com/wpress2022/wp-content/uploads/The-Grove_Without-name-512x501.png" id="main_stage">
+                        <figcaption style="font-size:20px">TD MAIN STAGE</figcaption>
+                    </figure>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <br>
+    <footer id ="footer">
+        <div class="footericon">
+            <ul>
+                <li><a href='https://www.youtube.com/watch?v=MkTutJcNKFs'><ion-icon name="logo-youtube"></ion-icon></a></li>
+                <li><a href='https://www.tiktok.com/@torontojazzfest'><ion-icon name="logo-tiktok"></ion-icon></a></li>
+                <li><a href='#'><ion-icon name="logo-tumblr"></ion-icon></a></li>
+            </ul>
+        </div>
+        <p>@2024 TD TORONTO JAZZ FESTIVAL ALL RIGHTS RESERVED</p>
+    </footer>
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+    integrity= "sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+    crossorigin="">
+    </script> 
+    <script type="text/javascript" src="Assets/app.js"></script>
+    
+</body>
+</html>

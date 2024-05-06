@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Purchase Tickets</title>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Shadows Into Light' rel='stylesheet'>
+    <link rel="stylesheet" href="Assets/styles.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100&display=swap" rel="stylesheet"> 
+    <link href='https://fonts.googleapis.com/css?family=Boogaloo' rel='stylesheet'>
+    <style>
+
+    </style>
+</head>
+<body>
+
+<div id = "topsection">
+    <div class="topnav">
+        <img src="https://torontojazz.com/wpress2022/wp-content/uploads/TorontoJazzFest_Logo_SMALL_Feb22_2023.svg" alt="Logo">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="artists.html">Artists & Schedule</a></li>
+                <li><a href="buytickets.html">Purchase Tickets</a></li>
+                <li><a href="index.html#location">Location</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+    </div>
+    <h1>Toronto's International Jazz Festival</h1>
+    <p>June 21-30, 2023</p>
+    </div>
+</div>
+
+<form id="purchaseForm">
+    <label for="ticketType">Ticket Type:</label>
+    <select id="ticketType" name="ticketType" onchange="updatePrice()">
+
+        <option value="One Day Pass" data-price="80.00">One Day Pass</option>
+        <option value="All Access Pass" data-price="200.00">All Access Pass</option>
+    </select>
+    
+    <br>
+
+    <label for="quantity">Quantity:</label>
+    <input type="number" id="quantity" name="quantity" min="1" value="1">
+
+    <br>
+
+    <label for="creditCard">Credit Card (16 digits):</label>
+    <input type="text" id="creditCard" name="creditCard" pattern="\d{16}" title="Please enter a 16-digit credit card number">
+    
+    <br>
+
+    <button type="button" onclick="processPayment()">Pay Now</button>
+</form>
+
+
+<div id="orderSummary" style="display: none;">
+    <h2>Order Summary</h2>
+    <p>Number of tickets: <span id="numTickets"></span></p>
+    <p>Price per ticket: $<span id="pricePerTicket">250.00</span></p>
+    <p>Subtotal: $<span id="subtotal"></span></p>
+    <p>Tax (13%): $<span id="tax"></span></p>
+    <p>Final Price: $<span id="finalPrice"></span></p>
+</div>
+<div id ="footer">
+    <div class="footericon">
+        <ul>
+            <li><a href='https://www.youtube.com/watch?v=MkTutJcNKFs'><ion-icon name="logo-youtube"></ion-icon></a></li>
+            <li><a href='https://www.tiktok.com/@torontojazzfest'><ion-icon name="logo-tiktok"></ion-icon></a></li>
+            <li><a href='#'><ion-icon name="logo-tumblr"></ion-icon></a></li>
+        </ul>
+    </div>
+    <p>@2024 TD TORONTO JAZZ FESTIVAL ALL RIGHTS RESERVED</p>
+</div>
+<script type="text/javascript" src="Assets/app.js"></script>
+</body>
+</html>
